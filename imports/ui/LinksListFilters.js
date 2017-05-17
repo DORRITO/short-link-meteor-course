@@ -14,7 +14,6 @@ export default class LinkListFilters extends React.Component {
 
   //////////////////////////////////////////////////////////
   componentDidMount() {
-    console.log('componentDidMount linkslist');
     this.linksTracker = Tracker.autorun(() => {
       this.setState({
         showVisible: Session.get('showVisible')
